@@ -1,14 +1,12 @@
 name: Build and Deploy
 
-on:
-  push:
-    branches: [ main ]
-
 jobs:
   build-and-deploy:
     permissions:
       contents: write
     runs-on: ubuntu-latest
+    env:
+      ACTIONS_STEP_DEBUG: true
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -25,8 +23,12 @@ jobs:
       - name: Build
         run: npm run build -- --configuration production --base-href=/personal_portfolio/
 
+      - name: List dist folder contents
+        run: ls -la dist/personal_portfolio
+
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: dist/personal_portfolio
           branch: gh-pages
+          token: ${{ secrets.GITHUB_TOKEN }}
