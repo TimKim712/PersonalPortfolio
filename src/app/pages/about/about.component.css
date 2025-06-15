@@ -1,0 +1,138 @@
+.about-section {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.about-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.profile-image {
+  flex-shrink: 0;
+}
+
+.placeholder-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.about-intro {
+  flex-grow: 1;
+}
+
+.about-intro h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #1a1a2e;
+}
+
+.about-intro h2 {
+  font-size: 1.5rem;
+  color: #4cc9f0;
+  margin-bottom: 0.5rem;
+}
+
+.about-intro p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #4cc9f0;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #3ab7de;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #4cc9f0;
+  border: 2px solid #4cc9f0;
+}
+
+.btn-secondary:hover {
+  background-color: rgba(76, 201, 240, 0.1);
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 2rem;
+}
+
+.about-text h3,
+.skills-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #1a1a2e;
+}
+
+.about-text p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.skills-group{
+  margin-bottom: 20px;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.skill-tag {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+  background-color: #4cc9f0;
+  color: white;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .about-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cta-buttons {
+    justify-content: center;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+}

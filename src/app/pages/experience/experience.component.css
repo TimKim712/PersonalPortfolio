@@ -1,0 +1,139 @@
+.experience-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.section-header h1 {
+  font-size: 2.5rem;
+  color: #1a1a2e;
+  margin-bottom: 0.5rem;
+}
+
+.section-header p {
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  background-color: #e0e0e0;
+  top: 0;
+  bottom: 0;
+  left: 20px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+  padding-left: 50px;
+}
+
+.timeline-dot {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: #4cc9f0;
+  border-radius: 50%;
+  left: 13px;
+  top: 5px;
+  z-index: 1;
+}
+
+.timeline-content {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-header {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.timeline-header h3 {
+  font-size: 1.3rem;
+  color: #1a1a2e;
+  margin-bottom: 0.5rem;
+}
+
+.company {
+  font-weight: 600;
+  color: #4cc9f0;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.top-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.company-logo{
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.period {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.responsibilities {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.responsibilities li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-tag {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .timeline::before {
+    left: 10px;
+  }
+
+  .timeline-item {
+    padding-left: 35px;
+  }
+
+  .timeline-dot {
+    left: 3px;
+  }
+}

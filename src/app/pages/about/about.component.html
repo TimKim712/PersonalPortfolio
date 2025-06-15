@@ -1,0 +1,45 @@
+<section class="about-section">
+  <div class="about-header">
+    <div class="about-intro">
+      <h1>
+        <span class="typed-name"></span>
+      </h1>
+      <!-- <h2>{{ title }}</h2> -->
+    </div>
+  </div>
+  <div class="profile-image">
+      <!-- Placeholder for profile image -->
+      <!-- <div>
+        <img src="assets/img/IMG_5081.JPG" alt="Profile image" class="placeholder-image">
+      </div> -->
+    </div>
+  <div class="about-content">
+    <div class="about-text">
+      <p>
+        Thanks for visiting! My name is Timothy Kim, and I'm currently pursuing a bachelor's of science in software engineering
+        at San José State University. My main interests lie in full-stack development and embedded systems, but I'm always exploring
+        other areas where my skills can be best applied.
+      </p>
+      <p>
+        As of now, I am interning at Lawrence Livermore National Laboratory, where I am working on a data archival tool utilized by a variety of other teams within the Lab.
+        I'm also the treasurer of our school's ACM chapter and compete in the university's archery team. Outside of school, you can catch me running,
+        playing/watching basketball, and overall just having a great time with family and friends.
+      </p>
+      <p>
+        Currently, I am looking for any new grad roles focusing on software engineering, software development, or embedded system design.
+        If anything here sparks your interest, please don't hesitate in contacting me! 
+      </p>
+    </div>
+    <div class="skills-section">
+      <h3>Skills</h3>
+      <div class="skills-group" *ngFor="let skillGroup of skills">
+        <h4>{{skillGroup.group}}</h4>
+        <div class="skills-container">
+        <div *ngFor="let skill of skillGroup.items" class="skill-tag">
+          {{ skill }}
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
