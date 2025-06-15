@@ -21,10 +21,10 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: npm run build -- --configuration production --base-href=/portfolio/
+        run: npm run build -- --configuration production --base-href=/personal_portfolio/
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: dist/portfolio
+          folder: dist/personal_portfolio
           branch: gh-pages
