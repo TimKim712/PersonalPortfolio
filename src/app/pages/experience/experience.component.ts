@@ -39,7 +39,7 @@ export class ExperienceComponent {
         "Developed an image recognition service on E-Commerce platform to automatically evaluate user-submitted images for inappropriate content",
         "Designed image processing workflow that would run image through a classification model, store important metadata, and display results",
       ],
-      technologies: ["AWS", "React", "Python", "FastAPI"],
+      technologies: ["AWS", "React", "TypeScript", "Python", "FastAPI"],
     },
     {
       id: 3,
