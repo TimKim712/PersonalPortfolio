@@ -65,8 +65,10 @@ export class AboutComponent {
       'Agile/Scrum',
       'Testing',
       'CI/CD',
+      'RESTful APIs',
+      'Network Protocols (HTTP, TCP/IP, UDP, IEEE 802.11)',
       'Computer Architecture',
-      'Operating Systems'
+      'Operating Systems',
     ]
   }
 ];
