@@ -18,19 +18,19 @@ export class ReferencesComponent {
       name: "GitHub",
       url: "https://github.com/TimKim712",
       icon: "fab fa-github",
-      description: "Check out my code repositories and open-source contributions",
+      description: "My personal repository containing personal and school projects",
     },
     {
       name: "LinkedIn",
       url: "https://www.linkedin.com/in/timothy-kim712",
       icon: "fab fa-linkedin",
-      description: "Connect with me professionally and view my work experience",
+      description: "Connect with me on LinkedIn to view my work experience and other stuff :)",
     },
     {
       name: "Resume",
       url: "assets/misc/resume.pdf",
       icon: "fas fa-file-alt",
-      description: "Download my resume to learn more about my skills and experience",
+      description: "Feel free to preview or download my resume to learn more about my skills and experience",
     }
   ]
 }
