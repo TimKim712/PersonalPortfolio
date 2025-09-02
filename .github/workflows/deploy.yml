@@ -26,14 +26,14 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: npm run build -- --configuration production --base-href=/personal_portfolio/
+        run: npm run build -- --configuration production --base-href=/PersonalPortfolio/
 
       - name: List dist folder contents
-        run: ls -la dist/personal_portfolio
+        run: ls -la dist/PersonalPortfolio
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: dist/personal_portfolio
+          folder: dist/PersonalPortfolio
           branch: gh-pages
           token: ${{ secrets.GITHUB_TOKEN }}
