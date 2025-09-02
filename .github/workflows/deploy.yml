@@ -34,6 +34,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: dist/PersonalPortfolio
+          folder: dist/personal_portfolio
           branch: gh-pages
           token: ${{ secrets.GITHUB_TOKEN }}
