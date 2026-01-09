@@ -136,3 +136,14 @@
     grid-template-columns: 1fr;
   }
 }
+
+.now-inline {
+  margin-top: 0.5rem;
+  font-size: 1.05rem;
+  color: #555;
+}
+
+.now-label {
+  font-weight: 500;
+  margin-right: 0.25rem;
+}

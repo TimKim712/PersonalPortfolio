@@ -69,3 +69,21 @@ img {
 .mt-4 {
   margin-top: 2rem;
 }
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(
+    180deg,
+    #f8f9fc 0%,
+    #eef2ff 30%,
+    #e0f7fa 60%,
+    #f1f8e9 100%
+  );
+  background-size: 100% 400%;
+  background-attachment: fixed;
+  transition: background-position 0.1s linear;
+}

@@ -1,0 +1,10 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  min-height: 100vh;
+  padding: 4rem 6rem;
+  scroll-margin-top: 80px;
+}
