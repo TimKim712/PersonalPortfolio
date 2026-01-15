@@ -2,7 +2,7 @@ import { Component, AfterViewInit, OnInit, ViewChild, ElementRef } from "@angula
 import Typed from "typed.js";
 
 interface TimeActivity {
-  start: number; // hour in 24h
+  start: number;
   end: number;
   text: string;
 }
@@ -24,10 +24,10 @@ export class AboutComponent implements OnInit, AfterViewInit {
   nowActivity = "";
 
   private schedule: TimeActivity[] = [
-    { start: 0,  end: 9,  text: "sleeping 😴" },
-    { start: 9,  end: 12, text: "class" },
+    { start: 0,  end: 9,  text: "sleeping" },
+    { start: 9,  end: 12, text: "in class" },
     { start: 12, end: 13, text: "grabbing lunch" },
-    { start: 13, end: 16, text: "class or grinding Leetcode" },
+    { start: 13, end: 16, text: "in class or grinding Leetcode" },
     { start: 16, end: 17, text: "at the gym" },
     { start: 17, end: 19, text: "making dinner" },
     { start: 19, end: 24, text: "studying or working on a project" },
@@ -61,7 +61,7 @@ export class AboutComponent implements OnInit, AfterViewInit {
     new Typed(this.typedActivity.nativeElement, {
       strings: [this.nowActivity],
       typeSpeed: 40,
-      startDelay: 600, // waits for name typing to begin
+      startDelay: 600, 
       showCursor: false
     });
   }
@@ -73,8 +73,8 @@ export class AboutComponent implements OnInit, AfterViewInit {
       items: ["JavaScript", "TypeScript", "Angular", "React", "Vue", "Tailwind", "SCSS"]
     },
     {
-      group: "Backend",
-      items: ["Node", "Python", "Flask", "FastAPI", "SQL", "Java", "MySQL", "MongoDB"]
+      group: "Backend and Databases",
+      items: ["Node", "Python", "Flask", "FastAPI", "Java", "Spring Boot", "Maven", "SQL", "MySQL", "MongoDB", "PostgreSQL", "Redis"]
     },
     {
       group: "Embedded",
@@ -82,7 +82,7 @@ export class AboutComponent implements OnInit, AfterViewInit {
     },
     {
       group: "Developer Tools",
-      items: ["Git", "Docker", "AWS", "Figma", "Selenium"]
+      items: ["Git (Github, Gitlab, BitBucket)", "Docker", "AWS", "Figma", "Selenium"]
     },
     {
       group: "Concepts",
@@ -95,7 +95,8 @@ export class AboutComponent implements OnInit, AfterViewInit {
         "RESTful APIs",
         "Network Protocols (HTTP, TCP/IP, UDP, IEEE 802.11)",
         "Computer Architecture",
-        "Operating Systems"
+        "Operating Systems",
+        "Machine Learning"
       ]
     }
   ];

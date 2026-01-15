@@ -39,11 +39,20 @@ export class ProjectsComponent {
     {
       id: 3,
       title: "Recipe Radar",
-      date: "January 2024 - May 2024",
+      date: "January 2025 - January 2025",
       description: "A website that generates recipes fulfilling meal criteria such as calories, protein, and dietary restrictions.",
       technologies: ["React", "Firebase", "Spoonacular API"],
       imageUrl: "assets/img/recipe-radar.png",
       githubUrl: "https://github.com/phatch9/Recipe-Radar",
     },
+    {
+      id: 4,
+      title: "Cold Start",
+      date: "January 2024 - May 2025",
+      description: "A simple Spring Boot backend demonstrating the benefits of implementing caching.",
+      technologies: ["Spring Boot", "Maven", "Docker", "Postgres", "Redis"],
+      imageUrl: "",
+      githubUrl: "https://github.com/TimKim712/Cold_Start",
+    }
   ]
 }
