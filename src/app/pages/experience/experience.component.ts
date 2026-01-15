@@ -24,8 +24,8 @@ export class ExperienceComponent {
       company: "Lawrence Livermore National Laboratory",
       period: "May 2025 - December 2025",
       description: [
-        "Working on a secure data archival platform for classified and unclassified experimental test data, supporting the storage, search, and traceability of over 350,000 records for multiple teams.",
-        "Collaborating with senior developers to improve UI, API development, testing, and bi-weekly data transfers from unclassified to classified spaces",
+        "Worked on a secure data archival platform for classified and unclassified experimental test data, supporting the storage, search, and traceability of over 350,000 records for multiple teams.",
+        "Collaborated with senior developers to improve UI, API development, testing, and bi-weekly data transfers from unclassified to classified spaces",
       ],
       technologies: ["Angular", "TypeScript", "Python", "FastAPI", "MongoDB", "ElasticSearch"],
     },

@@ -49,7 +49,7 @@
   align-items: center;
   justify-content: center;
   width: 80px;
-  background-color: #4cc9f0;
+  background-color: #4e7ee5;
   color: white;
   font-size: 2rem;
 }
@@ -75,14 +75,14 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  color: #4cc9f0;
+  color: black;
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s ease;
 }
 
 .reference-link:hover {
-  color: #3ab7de;
+  color: #0c8332;
 }
 
 .contact-section {
@@ -124,7 +124,6 @@
   font-size: 1.2rem;
 }
 
-/* Responsive styles */
 @media screen and (max-width: 768px) {
   .references-grid {
     grid-template-columns: 1fr;
