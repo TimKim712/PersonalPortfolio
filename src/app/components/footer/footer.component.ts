@@ -20,12 +20,14 @@ import { Component } from "@angular/core"
   styles: [
     `
     .footer {
-      background-color: #1a1a2e;
-      color: white;
+      background-color: #ffffff;
+      color: #64748b;
       padding: 1.5rem 0;
-      margin-top: 2rem;
+      border-top: 1px solid rgba(45, 143, 181, 0.18);
+      font-family: "Inter", "Poppins", sans-serif;
+      font-size: 0.88rem;
     }
-    
+
     .footer-container {
       display: flex;
       justify-content: space-between;
@@ -34,22 +36,22 @@ import { Component } from "@angular/core"
       margin: 0 auto;
       padding: 0 2rem;
     }
-    
+
     .social-links {
       display: flex;
       gap: 1rem;
     }
-    
+
     .social-links a {
-      color: white;
-      font-size: 1.5rem;
-      transition: color 0.3s ease;
+      color: #64748b;
+      font-size: 1.3rem;
+      transition: color 0.2s ease;
     }
-    
+
     .social-links a:hover {
-      color: #4cc9f0;
+      color: #2d8fb5;
     }
-    
+
     @media screen and (max-width: 768px) {
       .footer-container {
         flex-direction: column;

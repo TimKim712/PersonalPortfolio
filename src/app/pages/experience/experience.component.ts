@@ -19,18 +19,29 @@ export class ExperienceComponent {
   experiences: Experience[] = [
     {
       id: 1,
+      role: "Academic Graduate Appointee",
+      logo: "assets/img/Unknown-2.jpg",
+      company: "Lawrence Livermore National Laboratory",
+      period: "June 2026 -",
+      description: [
+        "Incoming Academic Graduate Appointee (AGA) for Infrastructure Applications Programming team (IAP).",
+      ],
+      technologies: [],
+    },
+    {
+      id: 2,
       role: "Computing Intern",
       logo: "assets/img/Unknown-2.jpg",
       company: "Lawrence Livermore National Laboratory",
       period: "May 2025 - December 2025",
       description: [
         "Worked on a secure data archival platform for classified and unclassified experimental test data, supporting the storage, search, and traceability of over 350,000 records for multiple teams.",
-        "Collaborated with senior developers to improve UI, API development, testing, and bi-weekly data transfers from unclassified to classified spaces",
+        "Collaborated with senior developers to improve UI, API development, testing, and bi-weekly data transfers from unclassified to classified spaces.",
       ],
       technologies: ["Angular", "TypeScript", "Python", "FastAPI", "MongoDB", "ElasticSearch"],
     },
     {
-      id: 2,
+      id: 3,
       role: "Technology Intern",
       logo: "assets/img/bhn.jpg",
       company: "Blackhawk Network",
@@ -42,7 +53,7 @@ export class ExperienceComponent {
       technologies: ["AWS", "React", "TypeScript", "Python", "FastAPI"],
     },
     {
-      id: 3,
+      id: 4,
       role: "Lab Assistant",
       logo: "assets/img/sjsu.png",
       company: "San José State University - College of Engineering",

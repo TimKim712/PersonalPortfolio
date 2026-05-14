@@ -1,0 +1,34 @@
+<section class="education-section">
+  <div class="section-header scroll-animate" appScrollAnimate>
+    <h1>Education</h1>
+  </div>
+
+  <div class="education-list">
+    <div class="education-card scroll-animate" appScrollAnimate *ngFor="let edu of education">
+      <div class="edu-top">
+        <div class="edu-info">
+          <h2>{{ edu.school }}</h2>
+          <p class="edu-degree">{{ edu.degree }}</p>
+          <p class="edu-period">{{ edu.period }}</p>
+        </div>
+        <img [src]="edu.logo" [alt]="edu.school + ' logo'" class="edu-logo" />
+      </div>
+
+      <div class="edu-bottom">
+        <div class="edu-activities" *ngIf="edu.activities.length">
+          <h4>Activities</h4>
+          <div class="tag-list">
+            <span *ngFor="let act of edu.activities" class="activity-tag">{{ act }}</span>
+          </div>
+        </div>
+
+        <div class="edu-coursework" *ngIf="edu.coursework.length">
+          <h4>Relevant Coursework</h4>
+          <div class="tag-list">
+            <span *ngFor="let course of edu.coursework" class="course-tag">{{ course }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

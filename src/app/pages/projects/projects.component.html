@@ -1,10 +1,10 @@
 <section class="projects-section">
-  <div class="section-header">
+  <div class="section-header scroll-animate" appScrollAnimate>
     <h1>Projects</h1>
   </div>
 
   <div class="projects-grid">
-    <div class="project-card" *ngFor="let project of projects">
+    <div class="project-card scroll-animate" appScrollAnimate *ngFor="let project of projects">
       <div class="project-image">
           <img src="{{project.imageUrl}}" class="placeholder-project-image">
       </div>

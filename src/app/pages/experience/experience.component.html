@@ -1,12 +1,12 @@
 <section class="experience-section">
-  <div class="section-header">
+  <div class="section-header scroll-animate" appScrollAnimate>
     <h1>Professional Experience</h1>
   </div>
 
   <div class="timeline">
     <div class="timeline-item" *ngFor="let exp of experiences">
       <div class="timeline-dot"></div>
-      <div class="timeline-content">
+      <div class="timeline-content scroll-animate" appScrollAnimate>
         <div class="timeline-header">
           <div class="top-row">
             <h3 class="job-title">{{ exp.role }}</h3>
@@ -22,7 +22,7 @@
 
         <div class="timeline-body">
           <ul class="responsibilities">
-            <li *ngFor="let item of exp.description">- {{ item }}</li>
+            <li *ngFor="let item of exp.description">{{ item }}</li>
           </ul>
           <div class="technologies">
             <span *ngFor="let tech of exp.technologies" class="tech-tag">{{

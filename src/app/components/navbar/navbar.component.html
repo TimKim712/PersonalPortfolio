@@ -1,52 +1,26 @@
 <nav class="navbar">
   <div class="navbar-container">
+    <a routerLink="/" fragment="hero" class="navbar-logo">TK</a>
+
     <div class="menu-icon" (click)="toggleMenu()">
       <i class="fas" [ngClass]="isMenuOpen ? 'fa-times' : 'fa-bars'"></i>
     </div>
 
     <ul class="nav-menu" [ngClass]="{ 'active': isMenuOpen }">
       <li class="nav-item">
-        <a
-          routerLink="/"
-          fragment="about"
-          class="nav-link"
-          (click)="isMenuOpen = false"
-        >
-          About
-        </a>
+        <a routerLink="/" fragment="about" class="nav-link" (click)="isMenuOpen = false">About</a>
       </li>
-
       <li class="nav-item">
-        <a
-          routerLink="/"
-          fragment="experience"
-          class="nav-link"
-          (click)="isMenuOpen = false"
-        >
-          Experience
-        </a>
+        <a routerLink="/" fragment="education" class="nav-link" (click)="isMenuOpen = false">Education</a>
       </li>
-
       <li class="nav-item">
-        <a
-          routerLink="/"
-          fragment="projects"
-          class="nav-link"
-          (click)="isMenuOpen = false"
-        >
-          Projects
-        </a>
+        <a routerLink="/" fragment="experience" class="nav-link" (click)="isMenuOpen = false">Experience</a>
       </li>
-
       <li class="nav-item">
-        <a
-          routerLink="/"
-          fragment="contact"
-          class="nav-link"
-          (click)="isMenuOpen = false"
-        >
-          Contact Me
-        </a>
+        <a routerLink="/" fragment="projects" class="nav-link" (click)="isMenuOpen = false">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/" fragment="contact" class="nav-link" (click)="isMenuOpen = false">Contact</a>
       </li>
     </ul>
   </div>

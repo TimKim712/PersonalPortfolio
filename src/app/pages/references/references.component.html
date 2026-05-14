@@ -1,27 +1,25 @@
 <section class="references-section">
-  <div class="section-header">
+  <div class="section-header scroll-animate" appScrollAnimate>
     <h1>Contact Me</h1>
   </div>
 
   <div class="references-grid">
-    <div *ngFor="let link of socialLinks">
-      <div class="reference-card">
-        <div class="reference-icon">
-          <i [class]="link.icon"></i>
-        </div>
-        <div class="reference-content">
-          <h3>{{ link.name }}</h3>
-          <p>{{ link.description }}</p>
-          <a
-            [attr.href]="link.url"
-            target="_blank"
-            rel="noopener"
-            class="reference-link"
-          >
-            {{ link.name === "Resume" ? "Preview" : "Visit" }}
-            <i class="fas fa-external-link-alt"></i>
-          </a>
-        </div>
+    <div class="reference-card scroll-animate" appScrollAnimate *ngFor="let link of socialLinks">
+      <div class="reference-icon">
+        <i [class]="link.icon"></i>
+      </div>
+      <div class="reference-content">
+        <h3>{{ link.name }}</h3>
+        <p>{{ link.description }}</p>
+        <a
+          [attr.href]="link.url"
+          target="_blank"
+          rel="noopener"
+          class="reference-link"
+        >
+          {{ link.name === "Resume" ? "Preview" : "Visit" }}
+          <i class="fas fa-external-link-alt"></i>
+        </a>
       </div>
     </div>
   </div>

@@ -1,72 +1,11 @@
-import { Component, AfterViewInit, OnInit, ViewChild, ElementRef } from "@angular/core";
-import Typed from "typed.js";
-
-interface TimeActivity {
-  start: number;
-  end: number;
-  text: string;
-}
-
-
+import { Component } from "@angular/core";
 
 @Component({
   selector: "app-about",
   templateUrl: "./about.component.html",
   styleUrls: ["./about.component.css"],
 })
-export class AboutComponent implements OnInit, AfterViewInit {
-
-  @ViewChild("typedName", { static: true })
-  typedName!: ElementRef;
-
-  @ViewChild("typedActivity", { static: true })
-  typedActivity!: ElementRef;
-  nowActivity = "";
-
-  private schedule: TimeActivity[] = [
-    { start: 0,  end: 9,  text: "sleeping" },
-    { start: 9,  end: 12, text: "in class" },
-    { start: 12, end: 13, text: "grabbing lunch" },
-    { start: 13, end: 16, text: "in class or grinding Leetcode" },
-    { start: 16, end: 17, text: "at the gym" },
-    { start: 17, end: 19, text: "making dinner" },
-    { start: 19, end: 24, text: "studying or working on a project" },
-  ];
-
-  ngOnInit(): void {
-    this.setCurrentActivity();
-  }
-
-  ngAfterViewInit(): void {
-    this.initTypedName();
-    this.initTypedActivity();
-  }
-
-  private setCurrentActivity(): void {
-    const hour = new Date().getHours();
-    this.nowActivity =
-      this.schedule.find(s => hour >= s.start && hour < s.end)?.text
-      ?? "doing something interesting";
-  }
-
-  private initTypedName(): void {
-    new Typed(this.typedName.nativeElement, {
-      strings: ["Timothy Kim"],
-      typeSpeed: 100,
-      showCursor: false
-    });
-  }
-
-  private initTypedActivity(): void {
-    new Typed(this.typedActivity.nativeElement, {
-      strings: [this.nowActivity],
-      typeSpeed: 40,
-      startDelay: 600, 
-      showCursor: false
-    });
-  }
-  title = "Software Engineering @ San José State University";
-
+export class AboutComponent {
   skills = [
     {
       group: "Frontend",

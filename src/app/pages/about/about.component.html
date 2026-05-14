@@ -1,22 +1,14 @@
 <section class="about-section">
-  <div class="about-header">
-    <div class="about-intro">
-  <h1>
-    <span #typedName class="typed-primary"></span>
-  </h1>
-
-  <p class="now-inline">
-    <span class="now-label">Right now I am probably:</span>
-    <span #typedActivity class="typed-primary"></span>
-  </p>
-</div>
+  <div class="section-header scroll-animate" appScrollAnimate>
+    <h1>About Me</h1>
   </div>
-  <div class="about-content">
+
+  <div class="about-content scroll-animate" appScrollAnimate>
     <div class="about-text">
       <p>
-        Thanks for visiting! My name is Timothy Kim, and I'm currently pursuing a bachelor's of science in software engineering
-        at San José State University. My main interests lie in full-stack development and low-level systems programming, but I'm always exploring
-        other areas where my skills can be best applied.
+        Thanks for visiting! I'm currently pursuing a bachelor's of science in software engineering
+        at San José State University. My main interests lie in software development, but I also love to dabble into machine learning, site reliability, and low-level systems. Overall, I'm always exploring
+        other areas where my skills can be best applied!
       </p>
       <p>
         Previously, I interned at the Lawrence Livermore National Laboratory and Blackhawk Network, where I contributed to the development of full-stack web applications.
@@ -24,28 +16,24 @@
         playing/watching basketball, at the archery range, or having a great time with family and friends.
       </p>
       <p>
-        Currently, I am looking for any new grad roles related to software engineering and/or development, embedded systems, firmware, and site reliability engineering.
-        If anything here sparks your interest, please don't hesitate in contacting me! 
+        Upon graduation, I will be returning to LLNL as an AGA for the Infrastructure Applications Programming team.
+        If anything here sparks your interest, please don't hesitate in contacting me!
       </p>
       <div class="about-photo">
-  <img
-    src="assets/img/profile.png"
-    alt="Photo of Timothy Kim"
-    loading="lazy"
-  />
-</div>
+        <img src="assets/img/archery.gif" alt="Archery" />
+        <p class="gif-caption">Me doing archery :)</p>
+      </div>
     </div>
     <div class="skills-section">
       <h3>Skills</h3>
       <div class="skills-group" *ngFor="let skillGroup of skills">
         <h4>{{skillGroup.group}}</h4>
         <div class="skills-container">
-        <div *ngFor="let skill of skillGroup.items" class="skill-tag">
-          {{ skill }}
+          <div *ngFor="let skill of skillGroup.items" class="skill-tag">
+            {{ skill }}
+          </div>
         </div>
-      </div>
       </div>
     </div>
   </div>
 </section>
-
