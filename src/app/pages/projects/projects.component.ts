@@ -32,7 +32,7 @@ export class ProjectsComponent {
       title: "Frequency Storer",
       date: "August 2025 - May 2026",
       description: "Senior Capstone project: detecting and analyzing for weak/unprotected protocols within a network and running network exploitation attacks.",
-      technologies: ["C", "Arduino", "Raspberry Pi"],
+      technologies: ["Bash", "Python", "Raspberry Pi", "NFC"],
       imageUrl: "",
       githubUrl: "https://github.com/SJSU-CMPE-195/Network-Vulnerability-Tester",
     },

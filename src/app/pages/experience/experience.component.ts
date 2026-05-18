@@ -22,9 +22,9 @@ export class ExperienceComponent {
       role: "Academic Graduate Appointee",
       logo: "assets/img/Unknown-2.jpg",
       company: "Lawrence Livermore National Laboratory",
-      period: "June 2026 -",
+      period: "June 2026 - Present",
       description: [
-        "Incoming Academic Graduate Appointee (AGA) for Infrastructure Applications Programming team (IAP).",
+        "Incoming Academic Graduate Appointee (AGA) for the Infrastructure Applications Programming team (IAP).",
       ],
       technologies: [],
     },
@@ -38,7 +38,7 @@ export class ExperienceComponent {
         "Worked on a secure data archival platform for classified and unclassified experimental test data, supporting the storage, search, and traceability of over 350,000 records for multiple teams.",
         "Collaborated with senior developers to improve UI, API development, testing, and bi-weekly data transfers from unclassified to classified spaces.",
       ],
-      technologies: ["Angular", "TypeScript", "Python", "FastAPI", "MongoDB", "ElasticSearch"],
+      technologies: ["Angular", "TypeScript", "Python", "FastAPI", "Docker", "MongoDB", "ElasticSearch"],
     },
     {
       id: 3,
@@ -50,7 +50,7 @@ export class ExperienceComponent {
         "Developed an image recognition service on E-Commerce platform to automatically evaluate user-submitted images for inappropriate content.",
         "Designed image processing workflow that would run image through a classification model, store important metadata, and display results.",
       ],
-      technologies: ["AWS", "React", "TypeScript", "Python", "FastAPI"],
+      technologies: ["AWS", "React", "TypeScript", "Python", "FastAPI", "Docker"],
     },
     {
       id: 4,

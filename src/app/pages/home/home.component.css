@@ -9,6 +9,10 @@ section {
   scroll-margin-top: 70px;
 }
 
+#education {
+  min-height: unset;
+}
+
 @media screen and (max-width: 768px) {
   section {
     padding: 4rem 1.5rem;

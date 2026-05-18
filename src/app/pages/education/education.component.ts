@@ -30,7 +30,6 @@ export class EducationComponent {
         'Software Engineering',
         'Computer Architecture',
         'Database Management',
-        'Embedded Systems'
       ]
     }
   ];

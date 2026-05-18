@@ -21,7 +21,7 @@ export class AboutComponent {
     },
     {
       group: "Developer Tools",
-      items: ["Git (Github, Gitlab, BitBucket)", "Docker", "AWS", "Figma", "Selenium"]
+      items: ["Git (GitHub, GitLab, BitBucket)", "Docker", "AWS", "Figma", "Selenium"]
     },
     {
       group: "Concepts",
@@ -31,7 +31,7 @@ export class AboutComponent {
         "Agile/Scrum",
         "Testing",
         "CI/CD",
-        "RESTful APIs",
+        "REST APIs",
         "Network Protocols (HTTP, TCP/IP, UDP, IEEE 802.11)",
         "Computer Architecture",
         "Operating Systems",
