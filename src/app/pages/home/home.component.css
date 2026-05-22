@@ -9,6 +9,12 @@ section {
   scroll-margin-top: 70px;
 }
 
+#hero {
+  min-height: unset;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 #education {
   min-height: unset;
 }

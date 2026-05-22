@@ -29,11 +29,11 @@ export class ProjectsComponent {
     },
     {
       id: 2,
-      title: "Frequency Storer",
+      title: "Network Vulernability Tester",
       date: "August 2025 - May 2026",
       description: "Senior Capstone project: detecting and analyzing for weak/unprotected protocols within a network and running network exploitation attacks.",
       technologies: ["Bash", "Python", "Raspberry Pi", "NFC"],
-      imageUrl: "",
+      imageUrl: "assets/img/network-vulernability.jpg",
       githubUrl: "https://github.com/SJSU-CMPE-195/Network-Vulnerability-Tester",
     },
     {
