@@ -47,15 +47,6 @@ export class ProjectsComponent {
     },
     {
       id: 4,
-      title: "Recipe Radar",
-      date: "January 2024 - May 2024",
-      description: "A website that generates recipes fulfilling meal criteria such as calories, protein, and dietary restrictions.",
-      technologies: ["React", "Firebase", "Spoonacular API"],
-      imageUrl: "assets/img/recipe-radar.png",
-      githubUrl: "https://github.com/phatch9/Recipe-Radar",
-    },
-    {
-      id: 5,
       title: "Cold Start",
       date: "January 2026 - January 2026",
       description: "A simple Spring Boot backend demonstrating the benefits of implementing caching.",
