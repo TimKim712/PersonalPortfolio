@@ -1,6 +1,5 @@
 name: Build and Deploy
 
-
 on:
   push:
     branches: [ main ]
@@ -26,10 +25,13 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: npm run build -- --configuration production --base-href=/PersonalPortfolio/
+        run: npm run build -- --configuration production --base-href=/
 
       - name: List dist folder contents
         run: ls -la dist/personal_portfolio
+
+      - name: Add CNAME file
+        run: echo "timkimdev.com" > dist/personal_portfolio/CNAME
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
