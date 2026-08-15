@@ -39,9 +39,6 @@ export class HeroComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit(): void {
     new Typed(this.typedGreeting.nativeElement, {
-      strings: ["Hi, I'm"],
-      typeSpeed: 70,
-      showCursor: false,
       onComplete: () => {
         new Typed(this.typedName.nativeElement, {
           strings: ['Timothy Kim'],

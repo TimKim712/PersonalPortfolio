@@ -13,7 +13,7 @@ export class AboutComponent {
     },
     {
       group: "Backend and Databases",
-      items: ["Node", "Python", "Flask", "FastAPI", "Java", "Spring Boot", , "Play", "Maven", "SQL", "MySQL", "MongoDB", "PostgreSQL", "OracleDB", "Redis"]
+      items: ["Node", "Python", "Flask", "FastAPI", "Java", "Spring Boot", "Play", "Maven", "SQL", "MySQL", "MongoDB", "PostgreSQL", "OracleDB", "Redis"]
     },
     {
       group: "Embedded",
