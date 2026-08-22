@@ -24,7 +24,7 @@ export class ExperienceComponent {
       company: "Lawrence Livermore National Laboratory",
       period: "June 2026 - Present",
       description: [
-        "Incoming Academic Graduate Appointee (AGA) for the Infrastructure Applications Programming team (IAP).",
+        "Building and maintaining features for a centralized infrastructure management platform, enabling Laboratory Infrastructure to plan, execute, and schedule various project types.",
       ],
       technologies: [],
     },
